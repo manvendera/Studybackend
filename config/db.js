@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 require('dotenv').config()
-
+const API = process.env.DATABASE_URL
 exports.dbConnect = ()=>{
     mongoose.connect(API,{
         useNewUrlParser:true,
